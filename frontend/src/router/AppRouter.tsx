@@ -19,6 +19,8 @@ import AISuggestionPage from "../pages/student/AISuggestionPage";
 import ManagerIncidentsPage from "../pages/manager/ManagerIncidentsPage";
 import ManagerIncidentDetailPage from "../pages/manager/ManagerIncidentDetailPage";
 
+import TestPage from "../pages/TestPage";
+
 function AppRouter() {
   return (
     <BrowserRouter>
@@ -26,6 +28,11 @@ function AppRouter() {
         <Route
           path="/"
           element={<Navigate to="/login" replace />}
+        />
+
+        <Route
+          path="/test"
+          element={<TestPage />}
         />
 
         <Route

@@ -16,6 +16,8 @@ export default {
 
         textPrimary: "#374151",
         textSecondary: "#6B7280",
+
+        border: "#E5E7EB",
       },
 
       fontFamily: {

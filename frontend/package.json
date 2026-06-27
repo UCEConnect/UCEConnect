@@ -36,5 +36,25 @@
     "typescript": "~6.0.2",
     "typescript-eslint": "^8.59.2",
     "vite": "^8.0.12"
+},
+  "build": {
+    "appId": "com.uceconnect.app",
+    "productName": "UCEConnect",
+    "directories": {
+      "output": "electron-dist"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/main.cjs"
+    ],
+    "win": {
+      "target": "portable"
+    },
+    "extraMetadata": {
+      "main": "electron/main.cjs",
+      "type": "commonjs"
+    }
   }
 }
+
+
